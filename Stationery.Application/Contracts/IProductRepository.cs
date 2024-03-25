@@ -1,0 +1,15 @@
+﻿using Models.Application.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Stationery.Application.Contracts
+{
+    public interface IProductRepository:IRepository<Product, int>
+    {
+        IQueryable<Product> SearchByName(string name);
+        IQueryable<Product> SearchByCategory(int categoryId);
+    }
+}

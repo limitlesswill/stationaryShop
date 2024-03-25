@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Stationary_Presentation</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Models.Application\Models.Application.csproj" />
+    <ProjectReference Include="..\Stationery.Application\Stationery.Application.csproj" />
+    <ProjectReference Include="..\Stationery.Context\Stationery.Context.csproj" />
+    <ProjectReference Include="..\Stationery.Infrastructure\Stationery.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
